@@ -1,0 +1,245 @@
+/* General Body Element Styles */
+body {
+    font-family: "Rajdhani", sans-serif; 
+    background-color: #000000;
+    color: #f5f5f5;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #94e6ff;
+    font-size: 2.125em;
+    letter-spacing: 0.1875em;
+}
+
+a {
+    color: white;
+}
+
+b {
+    color: #6f95ff;
+}
+
+h2 {
+    color: #94e6ff;
+    font-size: 1.625em;
+    letter-spacing: 0.0625em;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #00020e;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.section1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section1 p {
+    font-size: 1.355em;
+    color: white;
+    font-weight: lighter;
+}
+
+
+/* Navbar */
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.252em;
+}
+
+nav ul li a:hover {
+    color: #94e6ff;
+}
+
+/* Gallery Styles for homepage and gallery page */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px;
+}
+
+.gallery-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: center;
+    padding: 30px;
+}
+
+/* Image Styling for homepage and gallery page */
+.gallery-item img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.gallery-item-page img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item-page img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.gallery-item p, .gallery-item-page p {
+    margin: 0;
+    margin-top: 11px;
+    line-height: 0.7;
+}
+
+/* Table Styles */
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 2px solid #00020e;
+    border-radius: 1px;
+}
+
+th {
+    border: 2px solid #6f95ff;
+    border-radius: 1px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    color: #6f95ff;
+    background-color: #00020e;
+}
+
+/* Contact Form Styles */
+form {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #6f95ff;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+form label, form input, form textarea {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button a {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.125em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000000;
+}
+
+button {
+    font-family: "Rajdhani", sans-serif;
+    background-color: #6f95ff;
+    font-size: 1.125em;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #94e6ff;
+    color: #000000;
+}
+/* ul and ol Lists Styles */
+ul, ol {
+    color: #fffbfb;
+    font-size: 1.25em;
+    list-style-position: inside;
+    display: inline-block;
+}
+
+.section4 ul, li, b {
+    margin-bottom: 15px;
+}
+
+.section5 {
+    color: #31dbf1;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Video Gallery */
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px;
+}
+
+.video-item {
+    width: 275px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Fade-in Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section{
+    animation: fadeIn 1.2s ease forwards; /* Adjust duration as needed */
+}
